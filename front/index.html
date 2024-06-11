@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Disponibilité des sites</title>
+</head>
+<body>
+    <h1>Ajouter un site</h1>
+    <div class="container">
+        <div>
+            <table id="tableauSites">
+                <thead>
+                    <tr>
+                    <th>URL</th>
+                    <th>Client</th>
+                </tr>
+                </thead>
+                <tbody> </tbody>
+                </table>
+            </table>
+        </div>
+
+        <form id="ajoutForm">
+            <fieldset>
+                <legend>Ajout d'un site</legend>
+                <div class="form-group">
+                    <label for="url">Url du site</label>
+                    <input type="url" name="url" id="url" placeholder="https://exemple.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="client">Client</label>
+                    <input type="text" class="form-control" id="client">
+                </div>
+               
+                <button id="validationFormAjout">Ajouter</button>
+            </fieldset>
+        </form>
+
+        <div id="response"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
